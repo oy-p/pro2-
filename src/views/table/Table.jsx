@@ -18,7 +18,13 @@ class Test extends Component {
               total: 0
         }
     }
+
+    componentDidMount () {
+      this.getList ()
+    }
+
     render() {
+
         return (
             <div>
                 <Button onClick={this.getList.bind(this)}>获取文章列表</Button>
@@ -26,7 +32,10 @@ class Test extends Component {
                   columns={this.state.columns}
                   dataSource={this.state.dataSource}                  
                   pagination={{
-                    total: this.state.total
+                    total: this.state.total,
+
+                    //设置快速跳转
+                    showQuickJumper: true
                   }}
                   ></Table>
             </div>

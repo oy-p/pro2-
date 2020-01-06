@@ -3,6 +3,10 @@
   margin: 50px 100px;
 }
 
+.is-active{
+  /* background: red; */
+  color: black;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
