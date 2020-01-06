@@ -42,7 +42,7 @@ class Test extends Component {
               title: this.state.name[item],              
               key: item,
               render: (atext, record) => {
-                return <Tag color={ record.amout >200 ? 'black' : 'green' }>{record.amout}</Tag>
+                return <Tag color={ record.amout >200 ? 'red' : 'green' }>{record.amout}</Tag>
               }
             }
           }
